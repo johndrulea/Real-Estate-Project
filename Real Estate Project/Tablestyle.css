@@ -1,0 +1,22 @@
+table,th,td{
+    border: 1px solid black;
+    color: black;
+    border-collapse: collapse;
+
+}
+
+th{
+    font-style: bold;
+    text-transform: capitalize;
+
+}
+
+td{
+    text-align: center;
+    padding: 5px;
+
+}
+
+tr:nth-child(even){
+    background-color: aliceblue;
+}
