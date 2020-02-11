@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <title>Real Estate Agency</title>
+</head>
+
+<body>
+    <header class="pool-header">
+        <div class="content-header">
+            <div class="bar">
+                <!--<a href="index.html"> <img src="img/header.jpg"></a> -->
+            
+
+                <nav class="menu">
+                    <a href="home.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="sellers.html">Sellers</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+        <h1 class="fw-300 text-center ">Contact</h1>
+
+        <main class="container content-centered">
+
+            <h2 class="fw-300 text-center">Fill the information</h2>
+            <div>
+                <fieldset action="#">
+
+                        <Legend>Contact information</Legend>
+                        <label for="fname">Name:</label>
+                        <input type="text" id="fname" placeholder="Type your name">
+
+                        <label for="Email">Email:</label>
+                        <input type="email" id="uemail" placeholder="Type your email address" required>
+
+                        <label for="cell">Phone Number:</label>
+                        <input type="tel" id="cell" placeholder="Type your cell number">
+
+                        <label for="message">Message:</label>
+                        <textarea type="message" id="message" placeholder="What are you looking for?"cols="30" rows="10"></textarea>
+
+                </fieldset>
+
+                <fieldset>
+                        <legend>Product Information</legend>
+                        <label for="options">Type</label>
+                        <select name="options" id="type">
+                            <option value="" disable selected>  ---- Select an option ----</option>
+                            <option value="sell">Sell</option>
+                            <option value="buy">Buy</option>
+                        </select>
+
+                        <label for="noProducts">Number</label>
+                        <input type="number" min="0" max="100000000" step="10">
+
+                </fieldset>
+            </div>
+            <p>What is the best way to reach you and the best time?</p>
+
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div class="form-contact">
+                    <label for="cell">Phone Number:</label>
+                    <input type="radio" name="cell" value="telephone" id="cell">
+                    <label for="radio">Email:</label>
+                    <input type="radio" name="uemail" value="uemail" id="uemail">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <label for="contact time">Best day to reach you:</label>
+                    <input type="date" name="date" value="date" id="date">
+
+                    <label for="contact time">Best time to reach you:</label>
+                    <input type="time" name="time" value="time" id="time">
+            </fieldset>
+
+            <input class="button-green" type="submit" value="Send">
+
+        </main>
+
+        <footer class="footer menu">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="sellers.html">Sellers</a>
+            <a href="contact.html">Contact</a>
+        </footer>
+
+</body>
+</html>
+

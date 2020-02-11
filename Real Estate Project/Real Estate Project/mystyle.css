@@ -1,0 +1,522 @@
+
+*,*::before,*::after{ 
+    
+    box-sizing: inherit;
+
+}
+
+body{
+
+    font-family: 'Courier New', Courier, monospace;
+    background-color: white;
+}
+
+/** Global **/
+
+img{
+    max-width: 100%;
+}
+
+h1{
+    font-size: 32px;
+
+}
+
+@media(min-width:768px){
+    .content-header{
+        text-align: left;
+    }
+}
+
+h2{
+    font-size: 38px;
+
+}
+
+h3{
+    font-size: 28px;
+
+}
+
+h4{
+    font-size: 24px;
+
+}
+
+.text-center{
+    text-align: center;
+
+}
+
+.fw-300{
+    font-weight: 300;
+
+}
+
+.content-centered{
+    max-width: 800px;
+
+}
+
+/** Comment **/
+
+.comment{
+    background-color: green;
+    font-size: 24px;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.comment p{
+    text-align: right;
+
+}
+
+.comment blockquote:before{
+    content: "";
+    background-image: url(img/comilla.svg);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: -20px;
+}
+
+.comment blockquote{
+    position: relative;
+    padding-left: 50px;
+    font-weight: 300;;
+
+}
+
+.container{
+    width:95%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+
+}
+
+
+.site-header{
+    background-color: gray;
+    padding: 10px 0px 30px 0px;
+
+}
+
+.footer{
+    background-image: url(img/blog1.jpg);
+    min-height: 40px;
+
+}
+
+.main-header{
+    background-image: url(img/header.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 200px;
+}
+
+.site-header{
+    background-image: url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 150px;
+}
+
+
+/** contact img **/
+
+.contact-img{
+    background-image: url(img/blog2.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+
+}
+
+.contact-header{
+    background-image: url(img/den.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 150px;
+
+}
+
+.about-header{
+    background-image: url(img/landscape.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 150px;
+
+}
+
+.pool-header{
+    background-image: url(img/pool.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 150px;
+}
+
+.content-header{
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content-header,footer h1{
+    color: #ffffff;
+    padding-bottom: 20px;
+}
+
+.bar{
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    justify-content: left;
+}
+
+.bar{
+    padding-top: 3rem ;
+
+}
+
+@media(min-width:768px){
+    .bar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.menu a{
+    color: white;
+    text-align: center;
+    font-weight: 800;
+    font-size: 2.2rem;
+    margin-right: 2rem;
+    display: block;
+    text-shadow:
+		-1px -1px 0 black,
+		1px -1px 0 black,
+		-1px 1px 0  black,
+		1px 1px 0  black;
+}
+
+@media(min-width:768px){
+    .menu a{
+        display: inline-block;
+        font-size: 1.8rem;
+        margin-right: 2rem;
+    }
+
+    .menu a:last-of-type{
+        margin: 0;
+
+    }
+    }
+
+.menu a:hover{
+    color: purple;
+
+}
+
+/**mobile menu **/
+
+.mobile-menu img{
+    width: 5rem;
+
+}
+
+@media(min-width:768px){
+    .mobile-menu{
+        display: none;
+    }
+
+}
+
+.menu:target{
+    display: block;
+
+}
+
+.menu{
+    display:none;
+}
+
+@media(min-width:768px){
+    .menu{
+        display: block;
+    }
+
+}
+
+.icon-us{
+    display: flex;
+    justify-content: space-between;
+}
+
+.video-container{
+    display: flex;
+    justify-content: space-between;
+    flex: wrap;
+}
+
+.video{
+    flex: 0 0 calc(33.0% - 10px);
+    margin-bottom: 20px;
+}
+
+/** products **/
+
+.product-container{
+    display: flex;
+    justify-content: space-between;
+    flex: wrap;
+
+}
+
+.product{
+    border: 1px solid black;
+    background-color: lightseagreen;
+    flex: 0 0 calc(33.0% - 10px);
+
+    margin-bottom: 20px;
+}
+
+.product-content{
+    margin:0px;
+    padding: 20px;
+
+}
+
+.content-contact{
+    color: #ffffff;
+
+}
+
+.content-contact p{
+    font-size: 18px;
+
+}
+
+.bottom-section{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    
+}
+
+.bottom-section .blog{
+    flex-basis: 40%;
+    
+}
+
+
+.bottom-secton{
+    flex-basis: 90%;
+
+}
+
+.bottom-secton .public-comments{
+    flex-basis: calc(60%- 20px);
+
+}
+
+.new-blog .blog-img{
+    flex-basis: 40%;
+
+}
+
+.new-blog .blog-txt{
+    flex-basis: calc(60%- 10px);
+}
+
+.blog-txt h4{
+    line-height: 1.5;
+    margin: 0px;
+
+}
+
+.blog-txt h4::after{
+    content: '';
+    display: block;
+    height: 10px;
+    width: 300px;
+    margin: 5px;
+    background-color: aqua;
+    margin-top: 10px;
+}
+
+.blog-txt p{
+    color: black;
+}
+
+.price{
+    color: green;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.icons-characteristics{
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 500px;
+
+}
+
+.icons-characteristics li img{
+    margin-right: 20px;
+
+}
+
+.button{
+    color: blue;
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    margin-top:30px;
+    background-color: white;
+}
+
+.button-green{
+    color: white;
+    background-color: green;
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    margin-top:30px;
+    margin-bottom: 20px;
+}
+
+.button-orange{
+    color: white;
+    background-color:orange;
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    margin-top:30px;
+    margin-bottom: 20px;
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    /* border-bottom: 1px dotted black; If you want dots under the hoverable text */
+  }
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: whitesmoke;
+    color:black;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+  
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 50%;
+    left: 110%;
+    margin-left: -60px;
+  
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  /* Tooltip arrow  */
+  .tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%; /* To the left of the tooltip */
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+  }
+
+
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  legend{
+      font-size: 20px;
+      color: darkgray;
+
+  }
+
+  label{
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+
+  }
+
+  .contact p{
+    font-size: 14px;
+    color: darkgray;
+    margin: 20px 0 0 0;
+
+  }
+
+  input:not([type="submit"]),textarea,select{
+    background-color: whitesmoke;
+    width: 95%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 20px;
+
+  }
+
+  textarea{
+    height: 200px;
+
+  }
+
+input[type="radio"]{
+    width: auto;
+    margin: 0;
+
+  }
+
+  .form-contact{
+    max-width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /** About us **/
+
+  @media (min-width:768px){
+  .content-about{
+      display: grid;
+      grid-template-columns: repeat(3,33%);
+      grid-gap: 2rem;}
+  }
+
+  .about-text blockquote{
+      font-weight: 900;
+      font-size: 2rem;
+      margin: 0;
+      padding: 1rem 0 3rem 0;
+  }
